@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN" "http://castor.org/mapping.dtd">
+<mapping>
+    <class name="com.frontarts.xml.model.DMObject" auto-complete="true">
+        <map-to xml="Document"/>
+        <field name="attributes" collection="arraylist" type="com.frontarts.xml.model.DMValue" container="false">
+            <bind-xml name="attribute" node="element" QName-prefix="dm:"/>
+        </field>
+
+
+    </class>
+
+    <class name="com.frontarts.xml.model.DMValue">
+
+        <field name="name" type="string">
+            <!--<bind-xml node=""-->
+        </field>
+        <field name="value" type="string">
+            <bind-xml node="text"/>
+        </field>
+        <field name="href" type="string">
+            <bind-xml name="href" node="attribute"/>
+        </field>
+
+    </class>
+</mapping>

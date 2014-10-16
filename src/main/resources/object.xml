@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cst:am_report xmlns="http://www.w3.org/2005/Atom" xmlns:dm="http://ns.emc.com/documentum" xmlns:cst="http://custom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://custom http://localhost:8080/emc-rest/schemas/am_report.xsd"><link rel="self" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e.bxml" type="application/vnd.com.emc.documentum+xml"/>
+<link rel="edit" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e.bxml" type="application/vnd.com.emc.documentum+xml"/>
+<link rel="describedby" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/types/am_report.bxml" type="application/vnd.com.emc.documentum+xml"/>
+<link rel="relations" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e/relations.bxml" type="application/vnd.com.emc.documentum+xml"/>
+<link rel="contents" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e/contents.bxml" type="application/vnd.com.emc.documentum+xml"/>
+<link rel="version-history" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e/versions.bxml" type="application/vnd.com.emc.documentum+xml"/>
+<link rel="edit-media" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e/content" type="application/vnd.com.emc.documentum+xml"/>
+<cst:attributes xmlns:cst="http://custom">
+<dm:r_object_id xmlns:dm="http://ns.emc.com/documentum" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e.bxml">0900000f8000338e</dm:r_object_id>
+<dm:object_name xmlns:dm="http://ns.emc.com/documentum">amReport</dm:object_name>
+<dm:r_object_type xmlns:dm="http://ns.emc.com/documentum" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/types/am_report.bxml">am_report</dm:r_object_type>
+<dm:title xmlns:dm="http://ns.emc.com/documentum">Title for ACME Report</dm:title>
+<dm:subject xmlns:dm="http://ns.emc.com/documentum">Subject for ACME Report</dm:subject>
+<dm:authors xmlns:dm="http://ns.emc.com/documentum">
+<dm:value href="http://10.37.10.116:8080/emc-rest/repositories/acme01/users/tuser.bxml">tuser</dm:value>
+<dm:value href="http://10.37.10.116:8080/emc-rest/repositories/acme01/users/John%20Smith.bxml">John Smith</dm:value>
+</dm:authors>
+<dm:keywords xmlns:dm="http://ns.emc.com/documentum">
+<dm:value>Business</dm:value>
+<dm:value>Sample</dm:value>
+<dm:value>ACME</dm:value>
+</dm:keywords>
+<dm:r_creation_date xmlns:dm="http://ns.emc.com/documentum">2012-06-26T20:33:46.000-0700</dm:r_creation_date>
+<dm:r_modify_date xmlns:dm="http://ns.emc.com/documentum">2012-06-26T20:33:52.000-0700</dm:r_modify_date>
+<dm:r_modifier xmlns:dm="http://ns.emc.com/documentum" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/users/Administrator.bxml">Administrator</dm:r_modifier>
+<dm:a_is_hidden xmlns:dm="http://ns.emc.com/documentum">false</dm:a_is_hidden>
+<dm:i_is_deleted xmlns:dm="http://ns.emc.com/documentum">false</dm:i_is_deleted>
+<dm:a_archive xmlns:dm="http://ns.emc.com/documentum">false</dm:a_archive>
+<dm:a_link_resolved xmlns:dm="http://ns.emc.com/documentum">false</dm:a_link_resolved>
+<dm:i_reference_cnt xmlns:dm="http://ns.emc.com/documentum">1</dm:i_reference_cnt>
+<dm:i_has_folder xmlns:dm="http://ns.emc.com/documentum">true</dm:i_has_folder>
+<dm:i_folder_id xmlns:dm="http://ns.emc.com/documentum">
+<dm:value href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0b00000f80003376.bxml">0b00000f80003376</dm:value>
+</dm:i_folder_id>
+<dm:r_link_cnt xmlns:dm="http://ns.emc.com/documentum">0</dm:r_link_cnt>
+<dm:r_link_high_cnt xmlns:dm="http://ns.emc.com/documentum">0</dm:r_link_high_cnt>
+<dm:r_assembled_from_id xmlns:dm="http://ns.emc.com/documentum">0000000000000000</dm:r_assembled_from_id>
+<dm:r_frzn_assembly_cnt xmlns:dm="http://ns.emc.com/documentum">0</dm:r_frzn_assembly_cnt>
+<dm:r_has_frzn_assembly xmlns:dm="http://ns.emc.com/documentum">false</dm:r_has_frzn_assembly>
+<dm:r_is_virtual_doc xmlns:dm="http://ns.emc.com/documentum">0</dm:r_is_virtual_doc>
+<dm:i_contents_id xmlns:dm="http://ns.emc.com/documentum">0600000f8000578d</dm:i_contents_id>
+<dm:a_content_type xmlns:dm="http://ns.emc.com/documentum">html</dm:a_content_type>
+<dm:r_page_cnt xmlns:dm="http://ns.emc.com/documentum">1</dm:r_page_cnt>
+<dm:r_content_size xmlns:dm="http://ns.emc.com/documentum">6506</dm:r_content_size>
+<dm:a_full_text xmlns:dm="http://ns.emc.com/documentum">false</dm:a_full_text>
+<dm:a_storage_type xmlns:dm="http://ns.emc.com/documentum">filestore_01</dm:a_storage_type>
+<dm:i_cabinet_id xmlns:dm="http://ns.emc.com/documentum" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0c00000f80000106.bxml">0c00000f80000106</dm:i_cabinet_id>
+<dm:owner_name xmlns:dm="http://ns.emc.com/documentum" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/users/Administrator.bxml">Administrator</dm:owner_name>
+<dm:owner_permit xmlns:dm="http://ns.emc.com/documentum">7</dm:owner_permit>
+<dm:group_name xmlns:dm="http://ns.emc.com/documentum">docu</dm:group_name>
+<dm:group_permit xmlns:dm="http://ns.emc.com/documentum">5</dm:group_permit>
+<dm:world_permit xmlns:dm="http://ns.emc.com/documentum">3</dm:world_permit>
+<dm:i_antecedent_id xmlns:dm="http://ns.emc.com/documentum">0000000000000000</dm:i_antecedent_id>
+<dm:i_chronicle_id xmlns:dm="http://ns.emc.com/documentum" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e.bxml">0900000f8000338e</dm:i_chronicle_id>
+<dm:i_latest_flag xmlns:dm="http://ns.emc.com/documentum">true</dm:i_latest_flag>
+<dm:r_version_label xmlns:dm="http://ns.emc.com/documentum">
+<dm:value href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e/versions.bxml?label=1.0">1.0</dm:value>
+<dm:value href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e/versions.bxml?label=CURRENT">CURRENT</dm:value>
+</dm:r_version_label>
+<dm:i_branch_cnt xmlns:dm="http://ns.emc.com/documentum">0</dm:i_branch_cnt>
+<dm:i_direct_dsc xmlns:dm="http://ns.emc.com/documentum">false</dm:i_direct_dsc>
+<dm:r_immutable_flag xmlns:dm="http://ns.emc.com/documentum">false</dm:r_immutable_flag>
+<dm:r_frozen_flag xmlns:dm="http://ns.emc.com/documentum">false</dm:r_frozen_flag>
+<dm:r_has_events xmlns:dm="http://ns.emc.com/documentum">false</dm:r_has_events>
+<dm:acl_domain xmlns:dm="http://ns.emc.com/documentum">Administrator</dm:acl_domain>
+<dm:acl_name xmlns:dm="http://ns.emc.com/documentum">dm_4500000f80000101</dm:acl_name>
+<dm:i_is_reference xmlns:dm="http://ns.emc.com/documentum">false</dm:i_is_reference>
+<dm:r_creator_name xmlns:dm="http://ns.emc.com/documentum" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/users/Administrator.bxml">Administrator</dm:r_creator_name>
+<dm:r_is_public xmlns:dm="http://ns.emc.com/documentum">true</dm:r_is_public>
+<dm:r_policy_id xmlns:dm="http://ns.emc.com/documentum">0000000000000000</dm:r_policy_id>
+<dm:r_resume_state xmlns:dm="http://ns.emc.com/documentum">0</dm:r_resume_state>
+<dm:r_current_state xmlns:dm="http://ns.emc.com/documentum">0</dm:r_current_state>
+<dm:r_alias_set_id xmlns:dm="http://ns.emc.com/documentum">0000000000000000</dm:r_alias_set_id>
+<dm:a_is_template xmlns:dm="http://ns.emc.com/documentum">false</dm:a_is_template>
+<dm:r_full_content_size xmlns:dm="http://ns.emc.com/documentum">6506.0</dm:r_full_content_size>
+<dm:a_is_signed xmlns:dm="http://ns.emc.com/documentum">false</dm:a_is_signed>
+<dm:i_partition xmlns:dm="http://ns.emc.com/documentum">0</dm:i_partition>
+<dm:i_is_replica xmlns:dm="http://ns.emc.com/documentum">false</dm:i_is_replica>
+<dm:i_vstamp xmlns:dm="http://ns.emc.com/documentum">1</dm:i_vstamp>
+<cst:name>ACME Report Sample</cst:name>
+<cst:contributors>
+<dm:value xmlns:dm="http://ns.emc.com/documentum">tuser</dm:value>
+<dm:value xmlns:dm="http://ns.emc.com/documentum">Administrator</dm:value>
+<dm:value xmlns:dm="http://ns.emc.com/documentum">John Smith</dm:value>
+</cst:contributors>
+<cst:published>true</cst:published>
+</cst:attributes>
+<dm:permissions xmlns:dm="http://ns.emc.com/documentum">
+<dm:basic>
+<dm:browser>true</dm:browser>
+<dm:read>true</dm:read>
+<dm:relate>true</dm:relate>
+<dm:version>true</dm:version>
+<dm:write>true</dm:write>
+<dm:delete>true</dm:delete>
+</dm:basic>
+<dm:extended>
+<dm:execute-proc>true</dm:execute-proc>
+<dm:change-location>true</dm:change-location>
+<dm:change-state>true</dm:change-state>
+<dm:change-permit>true</dm:change-permit>
+<dm:change-owner>true</dm:change-owner>
+<dm:delete-object>true</dm:delete-object>
+<dm:change-folder-links>true</dm:change-folder-links>
+</dm:extended>
+</dm:permissions></cst:am_report>

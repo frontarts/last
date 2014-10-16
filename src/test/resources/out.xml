@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cst:am_report xmlns:cst="http://custom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:dm="http://ns.emc.com/documentum"
+               xsi:schemaLocation="http://localhost:8080/emc-rest/schemas/am_report.xsd">
+    <cst:attributes>
+        <dm:a_is_signed>false</dm:a_is_signed>
+        <dm:world_permit>3</dm:world_permit>
+        <dm:owner_name href="http://10.37.10.116:8080/emc-rest/repositories/acme01/users/Administrator.bxml">
+            Administrator
+        </dm:owner_name>
+        <dm:a_is_hidden>false</dm:a_is_hidden>
+        <dm:r_current_state>0</dm:r_current_state>
+        <dm:r_alias_set_id>0000000000000000</dm:r_alias_set_id>
+        <dm:r_frozen_flag>false</dm:r_frozen_flag>
+        <dm:i_is_reference>false</dm:i_is_reference>
+        <dm:a_link_resolved>false</dm:a_link_resolved>
+        <dm:r_modifier href="http://10.37.10.116:8080/emc-rest/repositories/acme01/users/Administrator.bxml">
+            Administrator
+        </dm:r_modifier>
+        <dm:acl_domain>Administrator</dm:acl_domain>
+        <dm:r_has_events>false</dm:r_has_events>
+        <dm:i_has_folder>true</dm:i_has_folder>
+        <dm:a_content_type>html</dm:a_content_type>
+        <dm:i_direct_dsc>false</dm:i_direct_dsc>
+        <dm:r_assembled_from_id>0000000000000000</dm:r_assembled_from_id>
+        <dm:a_is_template>false</dm:a_is_template>
+        <dm:a_storage_type>filestore_01</dm:a_storage_type>
+        <dm:r_has_frzn_assembly>false</dm:r_has_frzn_assembly>
+        <dm:i_is_deleted>false</dm:i_is_deleted>
+        <dm:r_link_cnt>0</dm:r_link_cnt>
+        <dm:i_branch_cnt>0</dm:i_branch_cnt>
+        <dm:r_content_size>6506</dm:r_content_size>
+        <dm:r_is_public>true</dm:r_is_public>
+        <dm:i_antecedent_id>0000000000000000</dm:i_antecedent_id>
+        <dm:r_creator_name href="http://10.37.10.116:8080/emc-rest/repositories/acme01/users/Administrator.bxml">
+            Administrator
+        </dm:r_creator_name>
+        <dm:i_chronicle_id href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e.bxml">
+            0900000f8000338e
+        </dm:i_chronicle_id>
+        <dm:i_is_replica>false</dm:i_is_replica>
+        <dm:r_creation_date>2012-06-26T20:33:46.000-0700</dm:r_creation_date>
+        <dm:subject>Subject for ACME Report</dm:subject>
+        <dm:r_frzn_assembly_cnt>0</dm:r_frzn_assembly_cnt>
+        <dm:r_page_cnt>1</dm:r_page_cnt>
+        <dm:owner_permit>7</dm:owner_permit>
+        <dm:r_is_virtual_doc>0</dm:r_is_virtual_doc>
+        <dm:i_partition>0</dm:i_partition>
+        <dm:title>Title for ACME Report</dm:title>
+        <dm:r_object_id href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e.bxml">
+            0900000f8000338e
+        </dm:r_object_id>
+        <dm:r_modify_date>2012-06-26T20:33:52.000-0700</dm:r_modify_date>
+        <dm:r_full_content_size>6506.0</dm:r_full_content_size>
+        <dm:a_archive>false</dm:a_archive>
+        <dm:name>ACME Report Sample</dm:name>
+        <dm:i_cabinet_id href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0c00000f80000106.bxml">
+            0c00000f80000106
+        </dm:i_cabinet_id>
+        <dm:i_latest_flag>true</dm:i_latest_flag>
+        <dm:i_contents_id>0600000f8000578d</dm:i_contents_id>
+        <dm:published>true</dm:published>
+        <dm:i_reference_cnt>1</dm:i_reference_cnt>
+        <dm:group_name>docu</dm:group_name>
+        <dm:acl_name>dm_4500000f80000101</dm:acl_name>
+        <dm:r_object_type href="http://10.37.10.116:8080/emc-rest/repositories/acme01/types/am_report.bxml">am_report
+        </dm:r_object_type>
+        <dm:r_resume_state>0</dm:r_resume_state>
+        <dm:r_policy_id>0000000000000000</dm:r_policy_id>
+        <dm:a_full_text>false</dm:a_full_text>
+        <dm:r_immutable_flag>false</dm:r_immutable_flag>
+        <dm:group_permit>5</dm:group_permit>
+        <dm:i_vstamp>1</dm:i_vstamp>
+        <dm:object_name>amReport</dm:object_name>
+        <dm:r_link_high_cnt>0</dm:r_link_high_cnt>
+    </cst:attributes>
+    <link rel="self" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e.bxml"
+          type="application/vnd.com.emc.documentum+xml"/>
+    <link rel="edit" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e.bxml"
+          type="application/vnd.com.emc.documentum+xml"/>
+    <link rel="describedby" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/types/am_report.bxml"
+          type="application/vnd.com.emc.documentum+xml"/>
+    <link rel="relations"
+          href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e/relations.bxml"
+          type="application/vnd.com.emc.documentum+xml"/>
+    <link rel="contents"
+          href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e/contents.bxml"
+          type="application/vnd.com.emc.documentum+xml"/>
+    <link rel="version-history"
+          href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e/versions.bxml"
+          type="application/vnd.com.emc.documentum+xml"/>
+    <link rel="edit-media" href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e/content"
+          type="application/vnd.com.emc.documentum+xml"/>
+</cst:am_report>

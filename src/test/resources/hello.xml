@@ -1,0 +1,4 @@
+<cst:am_report xmlns:cst="http://custom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://custom http://localhost:8080/emc-rest/schemas/am_report.xsd">
+    <cst:attributes/>
+</cst:am_report>

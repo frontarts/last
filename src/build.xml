@@ -1,0 +1,60 @@
+<project name="runner" basedir="." default="">
+    <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+    <property file="build.properties"/>
+
+    <target name="get.build.cs">
+        <exec executable="cmd" dir=".">
+            <arg line="/c groovy GetCS.groovy"/>
+        </exec>
+    </target>
+
+    <target name="patcher.install">
+        <copy file="${patcher.config.path}" todir="${tmp.dir}"/>
+        <copy todir="${tmp.dir}">
+            <fileset dir="../../Patcher"/>
+        </copy>
+        <exec executable="cmd" dir="../../../../../Patcher/bin">
+            <arg line="/c Patcher.bat -dcs ${tmp.dir}Patcher-Config-CS.groovy C:\builds\win64_sql\"/>
+        </exec>
+        <sleep minutes="120">
+    </target>
+
+    <property environment="env"/>
+    <target name="silent.install.cs">
+        <unzip src="${build.dir}/SilentInstaller.zip" dest="${build.dir}"/>
+        <copy file="${ci.config}/silent.properties" todir="${build.dir}/SilentInstaller/config"/>
+        <copy todir="${build.dir}/SilentInstaller/jdk">
+            <fileset dir="${env.JAVA_HOME}">
+                <include name="**"/>
+            </fileset>
+        </copy>
+        <copy todir="${build.dir}/SilentInstaller/ant">
+            <fileset dir="${env.ANT_HOME}">
+                <include name="**"/>
+            </fileset>
+        </copy>
+        <exec executable="cmd" dir="${build.dir}/SilentInstaller">
+            <arg line="/c xPlore.bat"/>
+        </exec>
+        <exec executable="cmd" dir="${tmp.dir}/Patcher/bin">
+            <arg line="/c Patcher.bat -stopNodes ${tmp.dir}\Patcher-Config.groovy "/>
+        </exec>
+        <exec executable="cmd" dir="${tmp.dir}/Patcher/bin">
+            <arg line="/c Patcher.bat -startNodes ${tmp.dir}\Patcher-Config.groovy "/>
+        </exec>
+        <copy todir="c:\dsearch-sdk" >
+            <fileset dir="c:\dsearch-sdk\dsearch-sdk*">
+                <include name="**"/>
+            </fileset>
+        </copy>
+        <attrib type
+                readonly="false"
+    </target>
+
+
+    <target name="patcher.unzip">
+        <unzip src="../../../../../Patcher.zip" dest="C:\"/>
+        <echo message=""
+    </target>
+
+</project>

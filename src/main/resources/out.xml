@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cst:am_report xmlns:cst="http://custom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://localhost:8080/emc-rest/schemas/am_report.xsd">
+    <cst:attributes>
+        <attribute href="">false</attribute>
+        <attribute href="">3</attribute>
+        <attribute href="http://10.37.10.116:8080/emc-rest/repositories/acme01/users/Administrator.bxml">Administrator
+        </attribute>
+        <attribute href="">false</attribute>
+        <attribute href="">0</attribute>
+        <attribute href="">0000000000000000</attribute>
+        <attribute href="">false</attribute>
+        <attribute href="">false</attribute>
+        <attribute href="">false</attribute>
+        <attribute href="http://10.37.10.116:8080/emc-rest/repositories/acme01/users/Administrator.bxml">Administrator
+        </attribute>
+        <attribute href="">Administrator</attribute>
+        <attribute href="">false</attribute>
+        <attribute href="">true</attribute>
+        <attribute href="">html</attribute>
+        <attribute href="">false</attribute>
+        <attribute href="">0000000000000000</attribute>
+        <attribute href="">false</attribute>
+        <attribute href="">filestore_01</attribute>
+        <attribute href="">false</attribute>
+        <attribute href="">false</attribute>
+        <attribute href="">0</attribute>
+        <attribute href="">0</attribute>
+        <attribute href="">6506</attribute>
+        <attribute href="">true</attribute>
+        <attribute href="">0000000000000000</attribute>
+        <attribute href="http://10.37.10.116:8080/emc-rest/repositories/acme01/users/Administrator.bxml">Administrator
+        </attribute>
+        <attribute href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e.bxml">
+            0900000f8000338e
+        </attribute>
+        <attribute href="">false</attribute>
+        <attribute href="">2012-06-26T20:33:46.000-0700</attribute>
+        <attribute href="">Subject for ACME Report</attribute>
+        <attribute href="">0</attribute>
+        <attribute href="">1</attribute>
+        <attribute href="">7</attribute>
+        <attribute href="">0</attribute>
+        <attribute href="">0</attribute>
+        <attribute href="">Title for ACME Report</attribute>
+        <attribute href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0900000f8000338e.bxml">
+            0900000f8000338e
+        </attribute>
+        <attribute href="">2012-06-26T20:33:52.000-0700</attribute>
+        <attribute href="">6506.0</attribute>
+        <attribute href="">false</attribute>
+        <attribute href="">ACME Report Sample</attribute>
+        <attribute href="http://10.37.10.116:8080/emc-rest/repositories/acme01/objects/0c00000f80000106.bxml">
+            0c00000f80000106
+        </attribute>
+        <attribute href="">true</attribute>
+        <attribute href="">0600000f8000578d</attribute>
+        <attribute href="">true</attribute>
+        <attribute href="">1</attribute>
+        <attribute href="">docu</attribute>
+        <attribute href="">dm_4500000f80000101</attribute>
+        <attribute href="http://10.37.10.116:8080/emc-rest/repositories/acme01/types/am_report.bxml">am_report
+        </attribute>
+        <attribute href="">0</attribute>
+        <attribute href="">0000000000000000</attribute>
+        <attribute href="">false</attribute>
+        <attribute href="">false</attribute>
+        <attribute href="">5</attribute>
+        <attribute href="">1</attribute>
+        <attribute href="">amReport</attribute>
+        <attribute href="">0</attribute>
+    </cst:attributes>
+</cst:am_report>
