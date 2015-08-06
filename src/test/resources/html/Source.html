@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" class="ancient-ie old-ie no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" class="ancient-ie old-ie no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" class="old-ie no-js" lang="en-US">
+<![endif]-->
+<!--[if IE 9]>
+<html id="ie9" class="old-ie9 no-js" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+<head>
+    <meta name="google-site-verification" content="W_nPACK1kn88dMliIbxtExGOvhu6HWUCKgKD8Ap93Dc"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Selenium WebDriver Tutorials | Demo Table for practicing Selenium Automation</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11"/>
+    <link rel="pingback" href="http://www.toolsqa.com/xmlrpc.php"/>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style type="text/css" id="static-stylesheet"></style>
+    <!-- icon -->
+    <link rel="icon" href="http://www.toolsqa.com/wp-content/uploads/2014/08/Favicon-16X161.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://www.toolsqa.com/wp-content/uploads/2014/08/Favicon-16X161.png" type="image/png"/>
+
+    <!-- This site is optimized with the Yoast WordPress SEO plugin v1.7.4 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="robots" content="noodp,noydir"/>
+    <meta name="description" content="Automation Practice Table"/>
+    <meta name="keywords" content="Automation Practice Table"/>
+    <link rel="canonical" href="http://www.toolsqa.com/automation-practice-table/"/>
+    <link rel="publisher" href="https://plus.google.com/u/0/113166156790537383775"/>
+    <!-- / Yoast WordPress SEO plugin. -->
+
+    <link rel='stylesheet' id='nextgen_gallery_related_images-css'
+          href='http://www.toolsqa.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/nextgen_gallery_display/static/nextgen_gallery_related_images.css?ver=4.0.5'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='dt-validator-style-css'
+          href='http://www.toolsqa.com/wp-content/themes/dt-the7/js/plugins/validator/validationEngine.jquery.css?ver=4.0.5' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='crayon-css'
+          href='http://www.toolsqa.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=2.6.8' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='layerslider-css'
+          href='http://www.toolsqa.com/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.1.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='ls-google-fonts-css'
+          href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900|Open+Sans:300|Indie+Flower:regular|Oswald:300,regular,700&#038;subset=latin,latin-ext'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='bbp-default-css' href='http://www.toolsqa.com/wp-content/themes/dt-the7/css/bbpress.css?ver=2.5.4-5380'
+          type='text/css' media='screen'/>
+    <link rel='stylesheet' id='go_pricing_styles-css'
+          href='http://www.toolsqa.com/wp-content/plugins/go_pricing/assets/css/go_pricing_styles.css?ver=2.4.2' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='go_pricing_jqplugin-mediaelementjs-css'
+          href='http://www.toolsqa.com/wp-content/plugins/go_pricing/assets/plugins/js/mediaelementjs/mediaelementplayer.min.css?ver=2.4.2'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='go_pricing_jqplugin-mediaelementjs-skin-css'
+          href='http://www.toolsqa.com/wp-content/plugins/go_pricing/assets/plugins/js/mediaelementjs/skin/mediaelementplayer.css?ver=2.4.2'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='tp_twitter_plugin_css-css'
+          href='http://www.toolsqa.com/wp-content/plugins/recent-tweets-widget/tp_twitter_plugin.css?ver=1.0' type='text/css'
+          media='screen'/>
+    <link rel='stylesheet' id='rs-plugin-settings-css'
+          href='http://www.toolsqa.com/wp-content/plugins/revslider/rs-plugin/css/settings.css?rev=4.5.9&#038;ver=4.0.5' type='text/css'
+          media='all'/>
+    <style type='text/css'>
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,700);
+
+        .tp-caption.thin_OS_66 {
+            position: absolute;
+            color: #fff;
+            text-shadow: none;
+            font-weight: 300;
+            font-size: 66px;
+            line-height: 70px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0px 4px;
+            padding-top: 0px;
+            margin: 0px;
+            border-width: 2px;
+            border-style: none;
+            background-color: transparent
+        }
+
+        .tp-caption.thin_OS_60 {
+            position: absolute;
+            color: #fff;
+            text-shadow: none;
+            font-weight: 300;
+            font-size: 57px;
+            line-height: 70px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0px 4px;
+            padding-top: 0px;
+            margin: 0px;
+            border-width: 2px;
+            border-style: none;
+            background-color: transparent
+        }
+
+        .tp-caption.normal_OS_22 {
+            position: absolute;
+            color: #fff;
+            text-shadow: none;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+            font-family: 'Open Sans', sans-serif;
+            padding-top: 6px;
+            padding-bottom: 8px;
+            padding-right: 12px;
+            padding-left: 12px;
+            border-radius: 8px;
+            border-style: none;
+            background-color: rgba(255, 255, 255, 0.1)
+        }
+
+        .tp-caption.header {
+            position: absolute;
+            color: #2c3641;
+            text-shadow: none;
+            font-weight: 300;
+            font-size: 52px;
+            line-height: 56px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0px 4px;
+            padding-top: 4px;
+            margin: 0px;
+            border-width: 10px;
+            border-style: none;
+            background-color: transparent
+        }
+
+        .tp-caption.normal_OS_20 {
+            position: absolute;
+            color: #fff;
+            text-shadow: none;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0px 4px;
+            padding-top: 1px;
+            margin: 0px;
+            border-width: 0px;
+            border-style: none;
+            background-color: transparent
+        }
+
+        .tp-caption.normal_OS_16 {
+            position: absolute;
+            color: #fff;
+            text-shadow: none;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0px 4px;
+            padding-top: 1px;
+            margin: 0px;
+            border-width: 0px;
+            border-style: none;
+            background-color: transparent
+        }
+
+        .tp-caption.thin_OS_56 {
+            position: absolute;
+            color: #fff;
+            text-shadow: none;
+            font-weight: 300;
+            font-size: 52px;
+            line-height: 56px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0px 4px;
+            padding-top: 1px;
+            margin: 0px;
+            border-width: 0px;
+            border-style: none;
+            background-color: transparent
+        }
+
+        .tp-caption.thin_OS_40 {
+            position: absolute;
+            color: #fff;
+            text-shadow: none;
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 44px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0px 4px;
+            padding-top: 1px;
+            margin: 0px;
+            border-width: 0px;
+            border-style: none;
+            background-color: transparent
+        }
+
+        .tp-caption.thin_OS_34 {
+            position: absolute;
+            color: #fff;
+            text-shadow: none;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 44px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0px 4px;
+            padding-top: 1px;
+            margin: 0px;
+            border-width: 0px;
+            border-style: none;
+            background-color: transparent
+        }
+
+        .tp-caption.landing_small {
+            position: absolute;
+            color: #fff;
+            text-shadow: none;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 44px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0px 4px;
+            padding-top: 1px;
+            margin: 0px;
+            border-width: 0px;
+            border-style: none;
+            background-color: transparent
+        }
+    </style>
+    <link rel='stylesheet' id='dt-font-basic-skin1-css'
+          href='http://fonts.googleapis.com/css?family=Open+Sans&#038;subset=greek-ext&#038;ver=4.0.5' type='text/css' media='all'/>
+    <link rel='stylesheet' id='dt-font-h1-skin1-css' href='http://fonts.googleapis.com/css?family=Open+Sans%3A300&#038;ver=4.0.5'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='dt-font-h3-skin1-css' href='http://fonts.googleapis.com/css?family=Open+Sans&#038;ver=4.0.5' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='dt-font-h6-skin1-css' href='http://fonts.googleapis.com/css?family=Open+Sans%3A600&#038;ver=4.0.5'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='dt-main-css' href='http://www.toolsqa.com/wp-content/themes/dt-the7/css/main.min.css?ver=4.3.0.1'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='dt-awsome-fonts-css'
+          href='http://www.toolsqa.com/wp-content/themes/dt-the7/css/font-awesome.min.css?ver=4.3.0.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='dt-custom.less-css'
+          href='http://www.toolsqa.com/wp-content/uploads/wp-less/dt-the7/css/custom-7bedf5a216.css?ver=4.3.0.1' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='dt-media-css' href='http://www.toolsqa.com/wp-content/themes/dt-the7/css/media.min.css?ver=4.3.0.1'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' id='dt-royalslider-css'
+          href='http://www.toolsqa.com/wp-content/themes/dt-the7/royalslider/royalslider.css?ver=4.3.0.1' type='text/css' media='all'/>
+    <link rel='stylesheet' id='style-css' href='http://www.toolsqa.com/wp-content/themes/dt-the7/style.css?ver=4.3.0.1' type='text/css'
+          media='all'/>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var photocrati_ajax = {"url": "http:\/\/www.toolsqa.com\/photocrati_ajax", "wp_home_url": "http:\/\/www.toolsqa.com", "wp_site_url": "http:\/\/www.toolsqa.com", "wp_root_url": "http:\/\/www.toolsqa.com", "wp_plugins_url": "http:\/\/www.toolsqa.com\/wp-content\/plugins", "wp_content_url": "http:\/\/www.toolsqa.com\/wp-content", "wp_includes_url": "http:\/\/www.toolsqa.com\/wp-includes\/"};
+        /* ]]> */
+    </script>
+    <script type='text/javascript'
+            src='http://www.toolsqa.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/ajax/static/ajax.js?ver=4.0.5'></script>
+    <script type='text/javascript' src='http://www.toolsqa.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+    <script type='text/javascript' src='http://www.toolsqa.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+    <script type='text/javascript'
+            src='http://www.toolsqa.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/ajax/static/persist.js?ver=4.0.5'></script>
+    <script type='text/javascript'
+            src='http://www.toolsqa.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/ajax/static/store.js?ver=4.0.5'></script>
+    <script type='text/javascript'
+            src='http://www.toolsqa.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/ajax/static/ngg_store.js?ver=4.0.5'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var CrayonSyntaxSettings = {"version": "2.6.8", "is_admin": "0", "ajaxurl": "http:\/\/www.toolsqa.com\/wp-admin\/admin-ajax.php", "prefix": "crayon-", "setting": "crayon-setting", "selected": "crayon-setting-selected", "changed": "crayon-setting-changed", "special": "crayon-setting-special", "orig_value": "data-orig-value", "debug": ""};
+        var CrayonSyntaxStrings = {"copy": "Press %s to Copy, %s to Paste", "minimize": "Click To Expand Code"};
+        /* ]]> */
+    </script>
+    <script type='text/javascript'
+            src='http://www.toolsqa.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=2.6.8'></script>
+    <script type='text/javascript'
+            src='http://www.toolsqa.com/wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js?ver=5.1.1'></script>
+    <script type='text/javascript' src='http://www.toolsqa.com/wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.2'></script>
+    <script type='text/javascript'
+            src='http://www.toolsqa.com/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.1.1'></script>
+    <script type='text/javascript'
+            src='http://www.toolsqa.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/lightbox/static/lightbox_context.js?ver=4.0.5'></script>
+    <script type='text/javascript'
+            src='http://www.toolsqa.com/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js?rev=4.5.9&#038;ver=4.0.5'></script>
+    <script type='text/javascript'
+            src='http://www.toolsqa.com/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?rev=4.5.9&#038;ver=4.0.5'></script>
+    <script type='text/javascript' src='http://www.toolsqa.com/wp-content/themes/dt-the7/js/modernizr.js?ver=4.3.0.1'></script>
+    <script type='text/javascript' src='http://www.toolsqa.com/wp-content/themes/dt-the7/js/svg-icons.min.js?ver=4.3.0.1'></script>
+    <meta name="generator" content="WordPress 4.0.5"/>
+    <!-- <meta name="NextGEN" version="2.0.66.29" /> -->
+    <script type="text/javascript">
+        dtGlobals.logoEnabled = 1;
+        dtGlobals.logoURL = 'http://www.toolsqa.com/wp-content/uploads/2014/08/Toolsqa1.jpg';
+        dtGlobals.logoW = '121';
+        dtGlobals.logoH = '35';
+        smartMenu = 1;
+    </script>
+    <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+
+    <!-- Start Alexa Certify Javascript -->
+    <script type="text/javascript">
+        _atrk_opts = { atrk_acct: "SJusj1agkg00ga", domain: "toolsqa.com", dynamic: true};
+        (function () {
+            var as = document.createElement('script');
+            as.type = 'text/javascript';
+            as.async = true;
+            as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js";
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(as, s);
+        })();
+    </script>
+    <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=SJusj1agkg00ga" style="display:none" height="1" width="1"
+                   alt=""/></noscript>
+    <!-- End Alexa Certify Javascript -->
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-48910704-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+</head>
+
+<body class="page page-id-1715 page-template page-template-tutorial_center_right_left-php image-blur btn-ios wpb-js-composer js-comp-ver-4.2.3 vc_responsive">
+<script id="_wauk0e">var _wau = _wau || [];
+_wau.push(["tab", "xhhnzfg9s4xu", "k0e", "right-middle"]);
+(function () {
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "http://widgets.amung.us/tab.js";
+    document.getElementsByTagName("head")[0].appendChild(s);
+})();</script>
+
+
+<div id="page">
+
+
+<!-- !Top-bar -->
+<div id="top-bar" role="complementary">
+    <div class="wf-wrap">
+        <div class="wf-table wf-mobile-collapsed">
+
+            <div class="wf-td">
+                <div class="mini-contacts wf-float-left">
+                    <ul>
+                        <li class="address">New Delhi (IND)</li>
+                        <li class="phone">(IND) +91-9899999888</li>
+                        <li class="email">lakshay@toolsqa.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wf-td right-block">
+                <div class="soc-ico show-round"><a title="Mail" target="_top" href="mailto:lakshay@toolsqa.com" class="mail"><span
+                        class="assistive-text">Mail</span></a><a title="Linkedin" target="_blank"
+                                                                 href="https://www.linkedin.com/profile/view?id=42183698&#038;"
+                                                                 class="linkedin"><span class="assistive-text">Linkedin</span></a><a
+                        title="Twitter" target="_blank" href="https://twitter.com/ToolsQa" class="twitter"><span class="assistive-text">Twitter</span></a><a
+                        title="Google+" target="_blank" href="https://plus.google.com/u/0/113166156790537383775/posts" class="google"><span
+                        class="assistive-text">Google+</span></a><a title="Facebook" target="_blank"
+                                                                    href="https://www.facebook.com/pages/Toolsqa/232121730314026"
+                                                                    class="facebook"><span class="assistive-text">Facebook</span></a><a
+                        title="YouTube" target="_blank" href="https://www.youtube.com/channel/UCSVljVzYbFphBtHvJgwMLsg/videos"
+                        class="you-tube"><span class="assistive-text">YouTube</span></a><a title="Rss" target="_blank"
+                                                                                           href="http://www.toolsqa.com/feed/"
+                                                                                           class="rss"><span
+                        class="assistive-text">Rss</span></a></div>
+            </div>
+        </div>
+        <!-- .wf-table -->
+    </div>
+    <!-- .wf-wrap -->
+</div>
+<!-- #top-bar -->
+
+
+<!-- left, center, classical, classic-centered -->
+<!-- !Header -->
+<header id="header" class="logo-center" role="banner"><!-- class="overlap"; class="logo-left", class="logo-center", class="logo-classic" -->
+    <div class="wf-wrap">
+        <div class="wf-table">
+            <div class="wf-td">
+
+                <!-- !- Branding -->
+                <div id="branding">
+                    <a href="http://www.toolsqa.com/"><img class="preload-me"
+                                                           src="http://www.toolsqa.com/wp-content/uploads/2014/08/Toolsqa.jpg" width="347"
+                                                           height="100" alt="Selenium WebDriver Tutorials"/></a>
+
+                    <div id="site-title" class="assistive-text">Selenium WebDriver Tutorials</div>
+                    <div id="site-description" class="assistive-text">Selenium Automation Framework</div>
+                </div>
+                <!-- #branding -->
+            </div>
+            <!-- .wf-td -->
+        </div>
+        <!-- .wf-table -->
+        <div class="navigation-holder">
+            <div>
+
+                <!-- !- Navigation -->
+                <nav id="navigation">
+                    <ul id="main-nav" class="fancy-rollovers wf-mobile-hidden menu-frame-on">
+                        <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-17581 first"><a
+                                href="http://www.toolsqa.com"><span>HOME</span></a></li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-21214 has-children">
+                            <a href="http://www.toolsqa.com/selenium-webdriver/"><span>TUTORIALS</span></a>
+                            <ul class="sub-nav">
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-21744 first level-arrows-on">
+                                    <a href="http://www.toolsqa.com/selenium-webdriver/selenium-introduction/"><span>Selenium</span></a>
+                                </li>
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-post menu-item-22504 level-arrows-on"><a
+                                        href="http://www.toolsqa.com/selenium-webdriver/cucumber-bdd-tool-tutorial-with-selenium-in-java/"><span>Cucumber</span></a>
+                                </li>
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-post menu-item-21743 level-arrows-on"><a
+                                        href="http://www.toolsqa.com/java/basic-java-programming/data-types-variables/"><span>Java</span></a>
+                                </li>
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-post menu-item-21742 level-arrows-on"><a
+                                        href="http://www.toolsqa.com/java/junit-framework/junit-introduction/"><span>JUnits</span></a></li>
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-post menu-item-21826 level-arrows-on"><a
+                                        href="http://www.toolsqa.com/java/maven/how-to-install-maven-eclipse-ide/"><span>Maven</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22603 dt-mega-menu mega-auto-width mega-column-1 has-children">
+                            <a href=""><span>TRAININGS</span></a>
+                            <ul class="sub-nav">
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-22602 dt-mega-parent wf-1 first level-arrows-on">
+                                    <a href="http://www.toolsqa.com/live-onsite-selenium-corporate-trainings/"><span>Selenium Corporate Trainings</span></a>
+                                </li>
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-22604 dt-mega-parent wf-1 level-arrows-on">
+                                    <a href="http://www.toolsqa.com/selenium-webdriver-online-training-course/"><span>Selenium WebDriver Online Training Course</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-577"><a href="http://forumsqa.com"
+                                                                                                              target="_blank"><span>FORUM</span></a>
+                        </li>
+                        <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-20916"><a
+                                href="http://www.toolsqa.com/selenium-webdriver/selenium-webdriver-basics-video-tutorials/"><span>VIDEOS</span></a>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-17595"><a
+                                href="http://www.toolsqa.com/about-us/"><span>ABOUT</span></a></li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a
+                                href="http://www.toolsqa.com/contacts/"><span>CONTACTS</span></a></li>
+                        <li class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-17611 dt-mega-menu mega-auto-width mega-column-1 act has-children">
+                            <a href=""><span>DEMO SITES</span></a>
+                            <ul class="sub-nav">
+                                <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-21575 dt-mega-parent wf-1 first level-arrows-on">
+                                    <a href="http://store.demoqa.com" target="_blank"><span>E-Commerce Demo Site</span></a></li>
+                                <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-21576 dt-mega-parent wf-1 level-arrows-on">
+                                    <a href="http://demoqa.com" target="_blank"><span>Basic Demo Site</span></a></li>
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-22594 dt-mega-parent wf-1 level-arrows-on">
+                                    <a href="http://www.toolsqa.com/automation-practice-form/"><span>Automation Practice Form</span></a>
+                                </li>
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-22593 dt-mega-parent wf-1 level-arrows-on">
+                                    <a href="http://www.toolsqa.com/automation-practice-switch-windows/"><span>Automation Practice Switch Windows</span></a>
+                                </li>
+                                <li class=" menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1715 current_page_item menu-item-22592 dt-mega-parent wf-1 act level-arrows-on">
+                                    <a href="http://www.toolsqa.com/automation-practice-table/"><span>Automation Practice Table</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-20821"><a
+                                href="http://www.toolsqa.com/testimonials/"><span>TESTIMONIALS</span></a></li>
+                    </ul>
+
+                    <a href="#show-menu" rel="nofollow" id="mobile-menu">
+                        <span class="menu-open">MENU</span>
+                        <span class="menu-close">CLOSE</span>
+                        <span class="menu-back">back</span>
+                        <span class="wf-phone-visible">&nbsp;</span>
+                    </a>
+
+
+                    <div class="wf-td mini-search wf-mobile-hidden">
+                        <form class="searchform" role="search" method="get" action="http://www.toolsqa.com/">
+                            <input type="text" class="field searchform-s" name="s" value="" placeholder="Type and hit enter &hellip;"/>
+                            <input type="submit" class="assistive-text searchsubmit" value="Go!"/>
+                            <a href="#go" class="submit"></a>
+                        </form>
+                    </div>
+
+
+                </nav>
+
+
+            </div>
+        </div>
+        <!-- .navigation-holder -->
+    </div>
+    <!-- .wf-wrap -->
+</header>
+<!-- #masthead -->
+
+<div class="page-title title-center">
+    <div class="wf-wrap">
+        <div class="wf-table">
+            <div class="wf-td"><h1>Automation Practice Table</h1></div>
+            <div class="wf-td">
+                <div class="hr-breadcrumbs divider-heder">
+                    <div class="assistive-text">You are here:</div>
+                    <ol class="breadcrumbs wf-td text-small" xmlns:v="http://rdf.data-vocabulary.org/#">
+                        <li typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="http://www.toolsqa.com/" title="">Home</a></li>
+                        <li class="current">Automation Practice Table</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main" class="bg-under-widget sidebar-right"><!-- class="sidebar-none", class="sidebar-left", class="sidebar-right" -->
+
+
+    <div class="main-gradient"></div>
+
+    <div class="wf-wrap">
+        <div class="wf-container-main">
+
+
+            <div id="content" class="content" role="main">
+
+
+                <h1>Automation Practice Table</h1>
+                <table class="tsc_table_s13" style="width: 100%;" summary="Sample Table" border="1">
+                    <caption><strong>Sample Table</strong></caption>
+                    <thead>
+                    <tr>
+                        <th style="text-align: justify;" scope="col">Structure</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Height</th>
+                        <th scope="col">Built</th>
+                        <th scope="col">Rank</th>
+                        <th scope="col">&#8230;</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td colspan="7">4 buildings</td>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Burj Khalifa</th>
+                        <td>UAE</td>
+                        <td>Dubai</td>
+                        <td>829m</td>
+                        <td>2010</td>
+                        <td>1</td>
+                        <td><a href="#">details</a></td>
+                    </tr>
+                    <tr class="odd">
+                        <th scope="row">Clock Tower Hotel</th>
+                        <td>Saudi Arabia</td>
+                        <td>Mecca</td>
+                        <td>601m</td>
+                        <td>2012</td>
+                        <td>2</td>
+                        <td><a href="#">details</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Taipei 101</th>
+                        <td>Taiwan</td>
+                        <td>Taipei</td>
+                        <td>509m</td>
+                        <td>2004</td>
+                        <td>3</td>
+                        <td><a href="#">details</a></td>
+                    </tr>
+                    <tr class="odd">
+                        <th scope="row">Financial Center</th>
+                        <td>China</td>
+                        <td>Shanghai</td>
+                        <td>492m</td>
+                        <td>2008</td>
+                        <td>4</td>
+                        <td><a href="#">details</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="entry-share">
+                    <div class="soc-ico"><a
+                            href="http://www.facebook.com/sharer.php?s=100&#038;p%5Burl%5D=http://www.toolsqa.com/automation-practice-table/&#038;p%5Btitle%5D=Automation+Practice+Table&#038;t=Automation+Practice+Table&#038;u=http://www.toolsqa.com/automation-practice-table/"
+                            class="share-button facebook" target="_blank" title="Facebook"><span class="assistive-text">Facebook</span><span
+                            class="share-content">share</span></a><a
+                            href="http://twitter.com/home?status=Automation+Practice+Table+http%3A%2F%2Fwww.toolsqa.com%2Fautomation-practice-table%2F"
+                            class="share-button twitter" target="_blank" title="Twitter"><span class="assistive-text">Twitter</span><span
+                            class="share-content">tweet</span></a><a
+                            href="http://plus.google.com/share?url=http://www.toolsqa.com/automation-practice-table/&#038;title=Automation+Practice+Table"
+                            class="share-button google" target="_blank" title="Google+"><span class="assistive-text">Google+</span><span
+                            class="share-content">share</span></a><a href="//pinterest.com/pin/create/button/"
+                                                                     class="share-button pinterest" target="_blank" title="Pinterest"
+                                                                     data-pin-config="above" data-pin-do="buttonBookmark"><span
+                            class="assistive-text">Pinterest</span><span class="share-content">pin it</span></a></div>
+                </div>
+
+
+            </div>
+            <!-- #content -->
+
+            <aside id="sidebar" class="sidebar">
+                <div class="sidebar-content">
+                    <section id="text-11" class="widget widget_text">
+                        <div class="textwidget">
+                            <script>
+                                (function () {
+                                    var cx = '017190527580828619301:9d6x2fxqofo';
+                                    var gcse = document.createElement('script');
+                                    gcse.type = 'text/javascript';
+                                    gcse.async = true;
+                                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                            '//www.google.com/cse/cse.js?cx=' + cx;
+                                    var s = document.getElementsByTagName('script')[0];
+                                    s.parentNode.insertBefore(gcse, s);
+                                })();
+                            </script>
+                            <gcse:search></gcse:search>
+                        </div>
+                    </section>
+                    <section id="text-10" class="widget widget_text">
+                        <div class="textwidget">
+                            <form style="border:0px solid #ccc;padding:3px;text-align:center;"
+                                  action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow"
+                                  onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=ToolsQA', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+                                <p>Enter your email address:</p>
+
+                                <p><input type="text" style="width:140px" name="email"/></p><input type="hidden" value="ToolsQA"
+                                                                                                   name="uri"/><input type="hidden"
+                                                                                                                      name="loc"
+                                                                                                                      value="en_US"/><input
+                                    type="submit" value="Subscribe"/></form>
+                        </div>
+                    </section>
+                    <section id="text-4" class="widget widget_text">
+                        <div class="widget-title">SELENIUM ONLINE TRAININGS</div>
+                        <div class="textwidget"><a href="http://www.toolsqa.com/selenium-webdriver-online-training-course/"><img
+                                src="http://www.toolsqa.com/wp-content/uploads/2014/10/a58635_207ee6dd7b3101bb527154aa8e7e3ee3.png_256.png"
+                                alt="Online Training" width="120" height="130"></a></div>
+                    </section>
+                    <section id="text-12" class="widget widget_text">
+                        <div class="widget-title">Corporate Trainings</div>
+                        <div class="textwidget"><a href="http://www.toolsqa.com/live-onsite-selenium-corporate-trainings/"><img
+                                src="http://www.toolsqa.com/wp-content/uploads/2015/03/training.png" alt="Corporate Training" width="180"
+                                height="200"></a></div>
+                    </section>
+                    <section id="text-13" class="widget widget_text">
+                        <div class="widget-title">ALTM integrates with Selenium multi browser</div>
+                        <div class="textwidget"><a href="http://bstriker.com/"><img
+                                src="http://www.toolsqa.com/wp-content/uploads/2015/03/BStriker.png"
+                                alt="ALTM integrates with Selenium Multi Browser" width="180" height="200"></a></div>
+                    </section>
+                    <section id="text-5" class="widget widget_text">
+                        <div class="widget-title">GOT SELENIUM PROBLEMS ?</div>
+                        <div class="textwidget"><a href="http://www.forumsqa.com"><img
+                                src="http://www.toolsqa.com/wp-content/uploads/2014/08/Ask_Questions_Button.png" alt="Ask Questions"> </a>
+                        </div>
+                    </section>
+                    <section id="text-6" class="widget widget_text">
+                        <div class="widget-title">WRITE FOR US!</div>
+                        <div class="textwidget"><a href="http://www.toolsqa.com/write-for-us/"><img
+                                src="http://www.toolsqa.com/wp-content/uploads/2014/10/copy-writing.png" alt="Write FOr us" width="150"
+                                height="150"></a></div>
+                    </section>
+                    <section id="recent-posts-4" class="widget widget_recent_entries">
+                        <div class="widget-title">RECENT POST</div>
+                        <ul>
+                            <li>
+                                <a href="http://www.toolsqa.com/selenium-webdriver/advance-webdriver-waits/">Advance Webdriver waits</a>
+                            </li>
+                            <li>
+                                <a href="http://www.toolsqa.com/java/basic-java-programming/vector/">Vector</a>
+                            </li>
+                            <li>
+                                <a href="http://www.toolsqa.com/java/basic-java-programming/stack/">Stack</a>
+                            </li>
+                            <li>
+                                <a href="http://www.toolsqa.com/java/basic-java-programming/generics/">Generics</a>
+                            </li>
+                            <li>
+                                <a href="http://www.toolsqa.com/java/list-interface/">List Interface</a>
+                            </li>
+                            <li>
+                                <a href="http://www.toolsqa.com/java/hashtable-class/">HashTable class</a>
+                            </li>
+                            <li>
+                                <a href="http://www.toolsqa.com/java/dictionary-class/">Dictionary Class</a>
+                            </li>
+                            <li>
+                                <a href="http://www.toolsqa.com/java/data-structure/">Data Structure</a>
+                            </li>
+                            <li>
+                                <a href="http://www.toolsqa.com/java/data-structures-arraylist/">Data Structures &#8211; ArrayList</a>
+                            </li>
+                            <li>
+                                <a href="http://www.toolsqa.com/java/basic-java-programming/exception-handling-2/">Exception Handling</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="rss-2" class="widget widget_rss">
+                        <div class="widget-title"><a class='rsswidget' href='http://forumsqa.com/feed/'><img style='border:0' width='14'
+                                                                                                             height='14'
+                                                                                                             src='http://www.toolsqa.com/wp-includes/images/rss.png'
+                                                                                                             alt='RSS'/></a> <a
+                                class='rsswidget' href='http://forumsqa.com/'>Selenium Problems</a></div>
+                        <ul>
+                            <li><a class='rsswidget' href='http://forumsqa.com/question/unable-to-select-value-from-dropdown-list/'>unable
+                                to select value from dropdown list</a></li>
+                            <li><a class='rsswidget' href='http://forumsqa.com/question/how-to-integrate-log4j-with-testng/'>How to
+                                integrate Log4j with TestNG?</a></li>
+                            <li><a class='rsswidget'
+                                   href='http://forumsqa.com/question/selenium-webdriver-delete-cookies-and-restart-the-browser-during-the-test/'>Selenium
+                                WebDriver – Delete cookies and restart the browser during the test</a></li>
+                            <li><a class='rsswidget'
+                                   href='http://forumsqa.com/question/selenium-webdriver-verify-the-object-chat-window-is-displayed-at-the-bottom-left-hand-corner-of-the-browser/'>Selenium
+                                WebDriver verify the object (chat window) is displayed at the bottom left hand corner of the browser</a>
+                            </li>
+                            <li><a class='rsswidget' href='http://forumsqa.com/question/invalid-selector-exception/'>invalid selector
+                                exception</a></li>
+                            <li><a class='rsswidget' href='http://forumsqa.com/question/fluentwait-condition-not-evaluating-to-true/'>FluentWait-condition
+                                not evaluating to true</a></li>
+                            <li><a class='rsswidget' href='http://forumsqa.com/question/excel-data-driven-issue/'>Excel Data Driven
+                                issue</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </aside>
+            <!-- #sidebar -->
+
+
+        </div>
+        <!-- .wf-container -->
+    </div>
+    <!-- .wf-wrap -->
+</div>
+<!-- #main -->
+
+
+<!-- !Bottom-bar -->
+<div id="bottom-bar" role="contentinfo">
+    <div class="wf-wrap">
+        <div class="wf-table wf-mobile-collapsed">
+
+            <div id="branding-bottom" class="wf-td"><img class="preload-me"
+                                                         src="http://www.toolsqa.com/wp-content/uploads/2014/08/Toolsqa1.jpg" width="121"
+                                                         height="35" alt="Selenium WebDriver Tutorials"/></div>
+
+
+            <div class="wf-td">
+                <div class="wf-float-left">
+                    Copyright reserved ToolsQA 2014 &nbsp;Dream-Theme &mdash; truly <a href="http://dream-theme.com" target="_blank">premium
+                    WordPress themes</a>
+                </div>
+            </div>
+
+            <div class="wf-td">
+            </div>
+
+
+            <div class="wf-td bottom-text-block">
+                <p>© ToolsQA - 2014 (FOUNDER - LAKSHAY SHARMA)</p>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- .wf-wrap -->
+</div>
+<!-- #bottom-bar -->
+
+
+<a href="#" class="scroll-top"></a>
+
+</div>
+<!-- #page -->
+<!-- ngg_resource_manager_marker -->
+<script type='text/javascript'
+        src='http://www.toolsqa.com/wp-content/plugins/bbpress/templates/default/js/editor.js?ver=2.5.4-5380'></script>
+<script type='text/javascript'
+        src='http://www.toolsqa.com/wp-content/plugins/go_pricing/assets/js/go_pricing_scripts.js?ver=2.4.2'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var mejsL10n = {"language": "en", "strings": {"Close": "Close", "Fullscreen": "Fullscreen", "Download File": "Download File", "Download Video": "Download Video", "Play\/Pause": "Play\/Pause", "Mute Toggle": "Mute Toggle", "None": "None", "Turn off Fullscreen": "Turn off Fullscreen", "Go Fullscreen": "Go Fullscreen", "Unmute": "Unmute", "Mute": "Mute", "Captions\/Subtitles": "Captions\/Subtitles"}};
+    var _wpmejsSettings = {"pluginPath": "\/wp-includes\/js\/mediaelement\/"};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://www.toolsqa.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.15.0'></script>
+<script type='text/javascript' src='http://www.toolsqa.com/wp-includes/js/mediaelement/wp-mediaelement.js?ver=4.0.5'></script>
+<script type='text/javascript'
+        src='http://www.toolsqa.com/wp-content/themes/dt-the7/royalslider/jquery.royalslider.js?ver=4.3.0.1'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var dtLocal = {"passText": "To view this protected post, enter the password below:", "moreButtonAllLoadedText": "Everything is loaded", "moreButtonText": {"loading": "Loading..."}, "postID": "1715", "ajaxurl": "http:\/\/www.toolsqa.com\/wp-admin\/admin-ajax.php", "contactNonce": "bd93bf2945", "ajaxNonce": "682be1a46c", "pageData": {"type": "page", "template": "page", "layout": null}, "themeSettings": {"smoothScroll": "on", "lazyLoading": false}};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://www.toolsqa.com/wp-content/themes/dt-the7/js/plugins.min.js?ver=4.3.0.1'></script>
+<script type='text/javascript' src='http://www.toolsqa.com/wp-content/themes/dt-the7/js/desktop-tablet.min.js?ver=4.3.0.1'></script>
+<script type='text/javascript' src='http://www.toolsqa.com/wp-content/themes/dt-the7/js/desktop.min.js?ver=4.3.0.1'></script>
+<script type='text/javascript' src='http://www.toolsqa.com/wp-content/themes/dt-the7/js/main.min.js?ver=4.3.0.1'></script>
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+
+ Served from: www.toolsqa.com @ 2015-05-13 07:31:28 by W3 Total Cache -->
