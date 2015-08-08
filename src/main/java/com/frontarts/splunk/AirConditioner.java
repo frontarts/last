@@ -28,68 +28,68 @@ public class AirConditioner extends Device {
         AC1 = new AirConditioner();
         AC1.setId("ELT0001");
         AC1.setPower("1180");
-        AC1.setType(RT_ELTRIC);
+        AC1.setType(ELTC_AWY);
         AC_CATEGORY.add(AC1);
 
         AC2 = new AirConditioner();
         AC2.setId("ELT0002");
         AC2.setPower("1480");
-        AC2.setType(RT_ELTRIC);
+        AC2.setType(ELTC_AWY);
         AC_CATEGORY.add(AC2);
 
         AC3 = new AirConditioner();
         AC3.setId("ELT0003");
         AC3.setPower("1780");
-        AC3.setType(RT_ELTRIC);
+        AC3.setType(ELTC_AWY);
         AC_CATEGORY.add(AC3);
 
         AC4 = new AirConditioner();
         AC4.setId("ELT0004");
         AC4.setPower("1280");
 
-        AC4.setType(RT_ELTRIC);
+        AC4.setType(ELTC_AWY);
 
         AC_CATEGORY.add(AC4);
 
         AC5 = new AirConditioner();
         AC5.setId("ELT0005");
         AC5.setPower("1380");
-        AC5.setType(RT_ELTRIC);
+        AC5.setType(ELTC_AWY);
 
         AC_CATEGORY.add(AC5);
 
         AC6 = new AirConditioner();
         AC6.setId("ELT0006");
         AC6.setPower("1580");
-        AC6.setType(RT_ELTRIC);
+        AC6.setType(ELTC_AWY);
 
         AC_CATEGORY.add(AC6);
 
         AC7 = new AirConditioner();
         AC7.setId("ELT0007");
         AC7.setPower("1880");
-        AC7.setType(RT_ELTRIC);
+        AC7.setType(ELTC_AWY);
 
         AC_CATEGORY.add(AC7);
 
         AC8 = new AirConditioner();
         AC8.setId("ELT0008");
         AC8.setPower("3000");
-        AC8.setType(RT_ELTRIC);
+        AC8.setType(ELTC_AWY);
 
         AC_CATEGORY.add(AC8);
 
         AC9 = new AirConditioner();
         AC9.setId("ELT0009");
         AC9.setPower("2400");
-        AC9.setType(RT_ELTRIC);
+        AC9.setType(ELTC_AWY);
 
         AC_CATEGORY.add(AC9);
 
         AC10 = new AirConditioner();
         AC10.setId("ELT0010");
         AC10.setPower("2700");
-        AC10.setType(RT_ELTRIC);
+        AC10.setType(ELTC_AWY);
 
         AC_CATEGORY.add(AC10);
 
