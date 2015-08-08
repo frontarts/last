@@ -1,28 +1,39 @@
 package com.frontarts.splunk;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by IntelliJ IDEA. @8/5/2015 11:37 PM
  * Author: Y
  * Copyright ? 1994-2011. EMC Corporation. All Rights Reserved.
  */
 public class Device {
+    public static final String CHARGER="CHARGER";
+    public static final String ELECTRIC="ELECTRIC";
+    public static final String RT_ELTRIC="RT-ELTRIC";
+
 
     private String id;
     private String name;
     private String power;
     private String type;
-
-    public String getChargePower() {
-        return chargePower;
+    private List<Device> categories = new ArrayList<Device>(){};
+    protected void addCategory(Device device){
+        categories.add(device);
     }
 
-    public void setChargePower(String chargePower) {
-        this.chargePower = chargePower;
+    public String getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(String chargePower) {
+        this.capacity = chargePower;
     }
 
 
     /* ====================Chargeble Devices =============================*/
-    private String chargePower;
+    private String capacity;
 
     /* ====================== to be override =============================*/
     protected int getFrequency() {
