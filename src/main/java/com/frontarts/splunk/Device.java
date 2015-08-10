@@ -9,9 +9,10 @@ import java.util.List;
  * Copyright ? 1994-2011. EMC Corporation. All Rights Reserved.
  */
 public class Device {
-    public static final String CHARGER="CHARGER";
-    public static final String ELECTRIC="ELECTRIC";
-    public static final String RT_ELTRIC="RT-ELTRIC";
+    public static final String CHARGER="CHAG";
+    public static final String ELTC_DUR="ELTC-DUR";
+    public static final String ELTC_AWY="ELTC-AWY";
+    public static final String ELTC_CNT="ELTC-CNT";
 
 
     private String id;
