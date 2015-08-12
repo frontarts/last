@@ -4,12 +4,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.math.BigDecimal;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Random;
+import java.util.*;
 
 /**
  * Created by wangy23 on 8/6/15.
@@ -27,14 +23,14 @@ public class DataMocker {
         DataMocker mocker = new DataMocker();
         logger.info("UserId,DeviceId,Power,Date,StartTime,EndTime,Duration,KWh,DeviceType");
         Date today = new Date();
-        for (int i = 1000; i < 2000; i++) {
+        for (int i = 1000; i < 1100; i++) {
             User user = new User(String.valueOf(i));
 
             mocker.setUserType(user);
 
             mocker.giveUserDevices(user);
 
-            for (int j = 0; j < 3; j++) {
+            for (int j = 0; j < 30; j++) {
                 Calendar day = new GregorianCalendar();
                 day.setTime(today);
                 day.add(Calendar.DAY_OF_MONTH, -j);
@@ -58,6 +54,7 @@ public class DataMocker {
         Random random = new Random();
         // add ac
         AirConditioner airConditioner = new AirConditioner();
+
         int deviceCount = random.nextInt(4) + 1;
 
         for (int i = 0; i < deviceCount; i++) {
@@ -97,7 +94,34 @@ public class DataMocker {
             String startTime, endTime;
             int[] timeSample = AirConditioner.getSampleByUserType(user.getUserType());
             String powerConsumption;
-            for (int aTimeSample : timeSample) {
+
+            int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
+            List<Integer> sample = new ArrayList<Integer>();
+            Random index = new Random();
+            if (dayOfMonth % 3 == 0) {
+                int toBeRemove = index.nextInt(3);
+                for (int i = 0; i < toBeRemove; i++) {
+
+                    timeSample[index.nextInt(timeSample.length)] = 0;
+                }
+
+                for (int aTimeSample : timeSample) {
+                    if (aTimeSample != 0) sample.add(aTimeSample);
+                }
+            }
+
+            if (dayOfMonth % 2 == 0) {
+                int toBeRemove = index.nextInt(2);
+                for (int i = 0; i < toBeRemove; i++) {
+
+                    timeSample[index.nextInt(timeSample.length)] = 0;
+                }
+                for (int aTimeSample : timeSample) {
+                    if (aTimeSample != 0) sample.add(aTimeSample);
+                }
+            }
+
+            for (Integer aTimeSample : sample) {
                 powerConsumption = getSampleConsumption(device);
                 startTime = getStartHourText(aTimeSample);
                 endTime = getEndHourText(aTimeSample, 30);
@@ -132,12 +156,12 @@ public class DataMocker {
                 // before
                 int beforeMinutes = random.nextInt(28) + 1;
                 if (random.nextBoolean()) {
-                    calendar.set(Calendar.MINUTE, 30 - beforeMinutes);
+                    calendar.set(Calendar.MINUTE, 0);
                     startTime = iso8601.format(calendar.getTime());
                     calendar.set(Calendar.MINUTE, 30);
                     endTime = iso8601.format(calendar.getTime());
                 } else {
-                    calendar.set(Calendar.MINUTE, 60 - beforeMinutes);
+                    calendar.set(Calendar.MINUTE, 30);
                     startTime = iso8601.format(calendar.getTime());
                     calendar.add(Calendar.HOUR, 1);
                     calendar.set(Calendar.MINUTE, 0);
@@ -156,7 +180,7 @@ public class DataMocker {
                 // log after sample
                 int after = random.nextInt(28) + 1;
                 startTime = iso8601.format(calendar.getTime());
-                calendar.add(Calendar.MINUTE, after);
+                calendar.add(Calendar.MINUTE, 30);
                 endTime = iso8601.format(calendar.getTime());
                 printSampleConsuption(user, log, date, device, startTime, endTime, power, after);
 
@@ -176,25 +200,25 @@ public class DataMocker {
                 calendar.set(Calendar.HOUR_OF_DAY, startHour);
 
                 if (random.nextBoolean()) {
-                    calendar.set(Calendar.MINUTE, 30 - beforeMinutes);
+                    calendar.set(Calendar.MINUTE, 0);
                     startTime = iso8601.format(calendar.getTime());
                     calendar.set(Calendar.MINUTE, 30);
                     endTime = iso8601.format(calendar.getTime());
                 } else {
-                    calendar.set(Calendar.MINUTE, 60 - beforeMinutes);
+                    calendar.set(Calendar.MINUTE, 30);
                     startTime = iso8601.format(calendar.getTime());
                     calendar.add(Calendar.HOUR, 1);
                     endTime = iso8601.format(calendar.getTime());
                 }
 
                 BigDecimal powerKWH = power.divide(new BigDecimal("1000"), 3, BigDecimal.ROUND_CEILING);
-                consumption = powerKWH.multiply(getMinute(beforeMinutes)).setScale(2, BigDecimal.ROUND_CEILING).toString();
+                consumption = powerKWH.multiply(getDuration(beforeMinutes)).setScale(2, BigDecimal.ROUND_CEILING).toString();
                 String logEntry = String.format(log, user.getId(), device.getId(), device.getPower(), date, startTime, endTime,
                         30, consumption, device.getType());
                 logger.info(logEntry);
 
                 // for middle half hours
-                consumption = powerKWH.multiply(getMinute(30)).setScale(2, BigDecimal.ROUND_CEILING).toString();
+                consumption = powerKWH.multiply(getDuration(30)).setScale(2, BigDecimal.ROUND_CEILING).toString();
                 for (int i = 0; i < halves; i++) {
                     startTime = iso8601.format(calendar.getTime());
                     calendar.add(Calendar.MINUTE, 30);
@@ -208,9 +232,9 @@ public class DataMocker {
                 if (after != 0) {
                     startTime = iso8601.format(calendar.getTime());
 
-                    calendar.add(Calendar.MINUTE, after);
+                    calendar.add(Calendar.MINUTE, 30);
                     endTime = iso8601.format(calendar.getTime());
-                    consumption = powerKWH.multiply(getMinute(after)).setScale(2, BigDecimal.ROUND_CEILING).toString();
+                    consumption = powerKWH.multiply(getDuration(after)).setScale(2, BigDecimal.ROUND_CEILING).toString();
 
                     logEntry = String.format(log, user.getId(), device.getId(), device.getPower(), date, startTime, endTime,
                             30, consumption, device.getType());
@@ -221,18 +245,18 @@ public class DataMocker {
 
         }
 
-}
+    }
 
     private void printSampleConsuption(User user, String log, String date, Device device, String startTime, String endTime, BigDecimal power, int duration) {
         String consumption;
         BigDecimal powerKWH = power.divide(new BigDecimal("1000"), 3, BigDecimal.ROUND_CEILING);
-        consumption = powerKWH.multiply(getMinute(duration)).setScale(2, BigDecimal.ROUND_CEILING).toString();
+        consumption = powerKWH.multiply(getDuration(duration)).setScale(2, BigDecimal.ROUND_CEILING).toString();
         String logEntry = String.format(log, user.getId(), device.getId(), device.getPower(), date, startTime, endTime,
                 30, consumption, device.getType());
         logger.info(logEntry);
     }
 
-    private BigDecimal getMinute(int beforeMinutes) {
+    private BigDecimal getDuration(int beforeMinutes) {
         return new BigDecimal(beforeMinutes).divide(new BigDecimal(60), 3, BigDecimal.ROUND_CEILING);
     }
 
